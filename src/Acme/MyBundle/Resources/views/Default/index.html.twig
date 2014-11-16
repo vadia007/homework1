@@ -1,0 +1,16 @@
+{# MyBundle/Resources/views/Default/index.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    {% stylesheets
+    '@AcmeMyBundle/Resources/public/css/style.css'
+    %}
+    <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+</head>
+<body>
+<h1>My bundle</h1>
+<p>The Get parameter is "{{ name|capitalize }}"</p>
+</body>
+</html>
